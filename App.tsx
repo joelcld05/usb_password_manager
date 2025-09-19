@@ -1,13 +1,15 @@
-import { StatusBar } from "expo-status-bar";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import { Icon } from "react-native-elements";
+import { StatusBar } from "expo-status-bar";
+
 import Navigation from "./routes";
+
 
 const DATA = [
   {
     id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
-    title: "Mis Contraseñas",
+    title: "Inicio",
     icon: "key",
   },
   {

@@ -1,6 +1,9 @@
-import { createStaticNavigation } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createStaticNavigation } from "@react-navigation/native";
+
 import Home from "../views/Home";
+
+
 // import { Suspense, lazy } from "react";
 
 const RootStack = createNativeStackNavigator({
@@ -11,7 +14,7 @@ const RootStack = createNativeStackNavigator({
     Home: {
       screen: Home,
       options: ({ route }: any) => ({
-        title: route?.params?.name || "Contraseñas",
+        title: route?.params?.name || "Home",
       }),
     },
   },
